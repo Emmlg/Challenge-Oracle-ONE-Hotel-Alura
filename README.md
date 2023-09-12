@@ -5,6 +5,13 @@
 </p>
 
 ---
+### 💬 Descripción del proyecto
+
+<p>
+ ESte repositorio tiene el proposito de dar solución a [Challenge Hotel alura](https://www.aluracursos.com/challenges/oracle-one-back-end/hotelalura/sprint01)
+     
+</p>
+
 ##  Primeros Pasos:
 
 
@@ -157,10 +164,42 @@ Por lo tanto, el proyecto debe contener los siguientes archivos después de las 
 
 ## 🚧 Proyecto
 
-#### Al clonar o descargar el proyecto base y tener instalado el JCalendar, tendrás esta presentación al ejecutar el proyecto en Eclipse:
+#### Al clonar o descargar el proyecto  y tener instalado el JCalendar, tendrás esta presentación al ejecutar el proyecto en Eclipse:
 
+<h3 align = "center"> Inicio de Aplicación  </h3>
 <p align="center" >
      <img width="700" heigth="700" src="https://user-images.githubusercontent.com/91544872/189419249-06b539da-7cf2-4d40-a711-618a5c872096.png">
+</p>
+                     <h3 align = "center"> Login </h3>h3
+<p align = "center">
+     
+![image](https://github.com/Emmlg/Challenge-Oracle-ONE-Hotel-Alura/assets/105991940/ab38130c-716e-4246-b834-e49256b6c51d)
+
+</p>
+                     <h3 align = "center"> Menu Usuario </h3>h3
+<p align = "center">
+     
+![image](https://github.com/Emmlg/Challenge-Oracle-ONE-Hotel-Alura/assets/105991940/c3ac8b9d-d240-4530-a70c-a30f1ad4668f)
+
+</p>
+                     <h3 align = "center"> Registrar un usuario </h3>
+<p align = "center">
+
+### 1. sistema de Reservas 
+![image](https://github.com/Emmlg/Challenge-Oracle-ONE-Hotel-Alura/assets/105991940/7796ead2-6dde-4ef4-8c24-8d68f9c41590)
+
+### 2. Registro de Huesped
+
+![image](https://github.com/Emmlg/Challenge-Oracle-ONE-Hotel-Alura/assets/105991940/f53885bb-c93b-433f-8b83-c7e3855e346c)
+
+
+</p>
+                     <h3 align = "center"> Sistema de Busqueda </h3>h3
+<p align = "center">
+     ### 1. busqueda por Reserva o huesped
+     ### 2. Edición o Eliminacón de datos
+![image](https://github.com/Emmlg/Challenge-Oracle-ONE-Hotel-Alura/assets/105991940/2094de35-88ed-4838-a4cf-6b91e4263b53)
+
 </p>
 
 ### ⚠️ Descargué el proyecto pero los caracteres especiales no funcionan:
@@ -218,6 +257,37 @@ Para este reto te proponemos dos tablas: <strong>Reservas</strong> y <strong>Hu�
      <img width="500" heigth="500" src="https://user-images.githubusercontent.com/101413385/169529338-09a4d4c2-1b5a-41dc-b305-38498ebc29a8.png">
 </p>
 
+### Script para crear la Base de datos
+'''
+CREATE DATABASE IF NOT EXISTS hotelAlura;
+use hotelAlura;
+
+CREATE TABLE IF NOT EXISTS reservas(
+
+id INT NOT NULL AUTO_INCREMENT,
+fechEntrada DATE NOT NULL,
+fechSalida DATE NOT NULL,
+valor DOUBLE NOT NULL,
+formPago VARCHAR(40) NOT NULL,
+PRIMARY KEY (id)
+
+);
+
+CREATE TABLE IF NOT EXISTS huesped(
+
+id INT NOT NULL AUTO_INCREMENT,
+nombre VARCHAR(50) NOT NULL,
+apellido VARCHAR(50) NOT NULL,
+fechNaci DATE NOT NULL,
+Nacionalidad VARCHAR(80) NOT NULL,
+telefono VARCHAR(10) NOT NULL,
+id_Reservas INT NOT NULL,
+PRIMARY KEY(id),
+FOREIGN KEY (id_Reservas) REFERENCES reservas(id)
+);
+
+
+'''
 
 ## 🗔 Plugin WindowBuilder
 
@@ -261,31 +331,3 @@ La pestaña de <em>Design</em> se abrirá por encima de la zona del <em>Console<
      <img width="500" heigth="500" src="https://user-images.githubusercontent.com/101413385/173682648-4c371224-fe4b-4e57-a3ee-9298a4d44554.png">
 </p>
 
-## 📬 Entrega
-
-### ¿Cómo incluir mi proyecto con el "#" del desafío?
-
-1) Ten el <strong>Fork</strong> del proyecto en tu repositorio en Github.
-2) Utiliza el topico **challengeonehotelaluralatam4** </br>
-3) Ve a la pestaña derecha de tu proyecto y haz clic en el engranaje de configuración en la sección <em>About</em>, selecciona el campo **topics** e inserae la etiqueta **challengeonehotelaluralatam4**
-
-
-### ¿Cómo hago la entrega final de mi Proyecto?
-
-4) Rellena el siguiente formulario con tus datos personales, junto con el enlace de tu repositorio. 🔹 [Link para o formulário](https://lp.alura.com.br/alura-latam-entrega-challenge-one-esp-back-end)
-
-<p align="center" >
-     <img width="700" heigth="700" src="https://user-images.githubusercontent.com/91544872/218745016-7d4582b1-0a7a-4501-a2a5-2b57da523635.png">
-</p>
-
-5) Ve a tu correo electrónico y canjea tu insignia obtenida al completar otro desafío del Proyecto ONE! 🏆
-
-6) ¡No olvides poner un enlace o video de tu proyecto en Linkedin! Etiqueta a #Oracle y #AluraLatam 🏁
-
-🧡 <strong>Oracle</strong></br>
-<a href="https://www.linkedin.com/company/oracle/" target="_blank">
-<img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a>
-
-💙 <strong>Alura Latam</strong></br>
-<a href="https://www.linkedin.com/company/alura-latam/mycompany/" target="_blank">
-<img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a>
