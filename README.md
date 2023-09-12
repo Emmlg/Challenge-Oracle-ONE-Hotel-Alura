@@ -8,9 +8,9 @@
 ##  Primeros Pasos:
 
 
-#### 🔹 Marca este proyecto con una ⭐
-#### 🔹 Sigue las orientaciones que tenemos en este repositorio. 📚
-#### 🔹 ¡Visita la página del desafío haciendo clic aquí! [Link do Challenge](https://www.aluracursos.com/challenges/oracle-one-back-end/hotelalura) 📃
+#### 🔹 Lee las instrucciones para descargarlo ⬇️.
+#### 🔹 mira las instrucciones de como importarlo en Eclipse ⭐
+#### 🔹 Como crear tu base de datos con el Script 📃
 </br>
 
 ## 🖥️ Tecnologías Utilizadas:
@@ -30,15 +30,9 @@
 - setResizable(false): determina el tamaño de la ventana, y a través del parámetro <strong>false</strong>, la pantalla no se puede maximizar;
 - setLocationRelativeTo(null): determina la ubicación de la ventana, y a través del parámetro <strong>null</strong> la mantiene centrada en la pantalla.
 
-#### Para este desafío, concéntrate en la parte lógica y la conexión con la base de datos, después de completar el desafío, siéntete libre de agregar nuevas funciones y modificar la interfaz gráfica.
+
 ---
 
-## 🔍 ¡Analizando nuestro repositorio!
-
-### Este es el repositorio base de nuestro proyecto, en el encontrarás:
-#### 🔹 src/views: carpeta con toda la interfaz gráfica de las pantallas necesarias para desarrollar el programa;
-#### 🔹 src/imagenes: carpeta con imágenes que puedes usar en tu proyecto. Siéntete libre de usar otros, si lo deseas;
-</br>
 
 ## ⬇️ Download
 
