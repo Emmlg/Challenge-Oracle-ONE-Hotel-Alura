@@ -8,9 +8,10 @@
 ### 💬 Descripción del proyecto
 
 <p>
- ESte repositorio tiene el proposito de dar solución a [Challenge Hotel alura](https://www.aluracursos.com/challenges/oracle-one-back-end/hotelalura/sprint01)
-     
+ ESte repositorio tiene el proposito de dar solución a Challenge Hotel
+[Link to Challenge](https://www.aluracursos.com/challenges/oracle-one-back-end/hotelalura) 📃
 </p>
+
 
 ##  Primeros Pasos:
 
