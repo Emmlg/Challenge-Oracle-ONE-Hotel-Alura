@@ -1,0 +1,27 @@
+CREATE DATABASE IF NOT EXISTS hotelAlura;
+use hotelAlura;
+
+CREATE TABLE IF NOT EXISTS reservas(
+
+id INT NOT NULL AUTO_INCREMENT,
+fechEntrada DATE NOT NULL,
+fechSalida DATE NOT NULL,
+valor DOUBLE NOT NULL,
+formPago VARCHAR(40) NOT NULL,
+PRIMARY KEY (id)
+
+);
+
+CREATE TABLE IF NOT EXISTS huesped(
+
+id INT NOT NULL AUTO_INCREMENT,
+nombre VARCHAR(50) NOT NULL,
+apellido VARCHAR(50) NOT NULL,
+fechNaci DATE NOT NULL,
+Nacionalidad VARCHAR(80) NOT NULL,
+telefono VARCHAR(10) NOT NULL,
+id_Reservas INT NOT NULL,
+PRIMARY KEY(id),
+FOREIGN KEY (id_Reservas) REFERENCES reservas(id)
+);
+
